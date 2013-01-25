@@ -1,0 +1,18 @@
+This program takes two command line argument.
+First argument is the input file for trace.
+Second argument is the ouput file for accuracy rate of different branch direction prediction schemes.
+
+This program consists of following prediction schemes:
+1. Always Taken
+2. Always Not Taken
+3. Bimodal Predictor with 1-Bit History
+   -  with 7 different table size (8, 16, 32, 128, 256, 512, and 1024 entries)
+4. Bimodal Predictor with 2-Bit Saturating Counters
+   -  with 7 different table size (8, 16, 32, 128, 256, 512, and 1024 entries)
+5. Gshare Predictor (table size of 1024 entries)
+   -  with 9 different global register size range from 2 bits to 10 bits
+6. Tournament Predictor
+   -  table size of 1024 entries for both Bimodal Predictor and Gshare Predictor
+   -  10-bit global register for Gshare Predictor
+   
+Output file is formatted accordingly.
